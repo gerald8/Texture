@@ -1551,7 +1551,7 @@ static NSString * const kReuseIdentifier = @"_ASCollectionReuseIdentifier";
     return NO;
   }
 
-  // If the data source implements canMoveItem, const auto them decide.
+  // If the data source implements canMoveItem, let them decide.
   if (_asyncDataSourceFlags.collectionNodeCanMoveItem) {
     if (let cellNode = [self nodeForItemAtIndexPath:indexPath]) {
       GET_COLLECTIONNODE_OR_RETURN(collectionNode, NO);
